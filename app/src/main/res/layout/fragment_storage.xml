@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.StorageFragment"
+    android:background="@drawable/music_bg">
+    <fragment
+        android:name="com.example.ck.fragment.PlaylistFragment"
+        android:id="@+id/fragment_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </fragment>
+
+
+</RelativeLayout>

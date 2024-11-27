@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcomeActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logotbp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Chào mừng Lê Đại Thành." />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_below="@id/tv_1"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn muốn nghe nhạc hay không?" />
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_below="@id/tv_2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ToggleButton
+                android:id="@+id/toggle_listen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Tôi muốn nghe"
+                android:textOn="Tôi muốn nghe"
+                android:backgroundTint="#9E9E9E" />
+
+            <ToggleButton
+                android:id="@+id/toggle_no_listen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Tôi không nghe"
+                android:textOn="Tôi không nghe"
+                android:backgroundTint="#9E9E9E"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@id/toggle_listen" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi nhớ các lựa chọn!" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_below="@id/checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="OK" />
+
+</RelativeLayout>
